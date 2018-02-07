@@ -1,0 +1,4 @@
+<h1>Our Starships</h1>
+<div ng-repeat="ship in ships">
+    <a ui-sref="ship(ship)" ><h3>{{ ship.name | uppercase }} --- {{ ship.cost_in_credits | currency}}</h3></a>
+</div>
